@@ -8,7 +8,7 @@ const MyAppleSigninButton = ({ ...rest }) => (
     authOptions={{
       clientId: 'com.n8blake.splopple-music',
       scope: 'email name',
-      redirectURI: 'https://splopple-music.herokuapp.com/applelogin',
+      redirectURI: 'https://splopple-siwa-test.herokuapp.com/applelogin',
       state: '',
       nonce: 'nonce',
       usePopup: true,

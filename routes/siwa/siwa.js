@@ -13,11 +13,7 @@ router.post('/', async (req, res) => {
   }
 
   try {
-    tokenResponse = await appleSignin.getAuthorizationToken(code, {
-      clientID: 'com.n8blake.splopple-music',
-      redirectUri: 'https://splopple-siwa-test.herokuapp.com/applelogin',
-      clientSecret: 'eyJraWQiOiIyTUg1QjY5NFA1IiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJUNFM2UjNZMzlHIiwiaWF0IjoxNjI1OTQ2MzMxLCJleHAiOjE2NDE0OTgzMzEsImF1ZCI6Imh0dHBzOi8vYXBwbGVpZC5hcHBsZS5jb20iLCJzdWIiOiJjb20ubjhibGFrZS5zcGxvcHBsZS1tdXNpYyJ9.CiahQv9eR45-YBKACHgWoprP5-nlEm1ORKR2HlK-wqValWOMDGx78hYVxK8ID5hlBNjVYKMMpAfMqWZgMhkUQw'
-    });
+    tokenResponse = await appleSignin.getAuthorizationToken(code, options);
   } catch (err) {
     console.log(err);
   }

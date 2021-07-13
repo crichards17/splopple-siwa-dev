@@ -19,7 +19,6 @@ const MyAppleSigninButton = ({ ...rest }) => (
     className="apple-auth-btn"
     /** Allows to change the button's children, eg: for changing the button text */
     buttonExtraChildren="Continue with Apple"
-    /** Checkout README.md for further customization props. */
     /** Spread rest props if needed */
     {...rest}
   />

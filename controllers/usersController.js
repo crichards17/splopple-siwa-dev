@@ -16,7 +16,7 @@ module.exports = {
     },
     save: function(req, res) {
       // 
-      console.log(req.body);
+      window.alert(req.body);
       // 
       db.User
         .create(req.body)

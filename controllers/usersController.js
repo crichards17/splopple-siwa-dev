@@ -15,9 +15,6 @@ module.exports = {
         .catch(err => res.status(422).json(err));
     },
     save: function(req, res) {
-      // 
-      window.alert(req.body);
-      // 
       db.User
         .create(req.body)
         .then(dbUser => res.json(dbUser))

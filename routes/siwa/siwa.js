@@ -1,12 +1,9 @@
 const router = require("express").Router();
 const usersController = require("../../controllers/usersController");
 
-// Matches with "/applelogin"
-router.route("/")
-  .post(usersController.save);
-
-// Matches with "/api/books/:id"
-router.route("/:id")
-  .get(usersController.findOne)
+router.post('/', async (req, res) => {
+  console.log("SIWA post route called");
+  console.log(req.body);
+});
 
 module.exports = router;

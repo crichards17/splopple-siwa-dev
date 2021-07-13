@@ -1,10 +1,9 @@
 const path = require("path");
 const router = require("express").Router();
+const siwaRoutes = require("./siwa");
 
-router.post('/applelogin', async (req, res) => {
-  console.log("SIWA post route called");
-  console.log(req.body);
-});
+// API Routes
+router.use("/applelogin", siwaRoutes);
 
 // If no API routes are hit, send the React app
 router.use(function(req, res) {

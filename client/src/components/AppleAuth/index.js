@@ -11,7 +11,7 @@ const MyAppleSigninButton = ({ ...rest }) => (
       redirectURI: 'https://splopple-siwa-test.herokuapp.com/applelogin',
       state: '',
       nonce: 'nonce',
-      usePopup: true,
+      usePopup: false,
     }}
     /** General props */
     uiType="dark"

@@ -5,7 +5,7 @@ router.post('/', async (req, res) => {
 
   const { provider, response } = req.body;
 
-  res.json({ status: 'ok' });
+  res.json(req.body);
 
 });
 

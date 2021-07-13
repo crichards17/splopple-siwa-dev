@@ -1,5 +1,5 @@
 const router = require("express").Router();
-import appleSignin from 'apple-signin-auth';
+const {appleSignin} = require('apple-signin-auth');
 
 
 router.post('/', async (req, res) => {

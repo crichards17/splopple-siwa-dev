@@ -1,11 +1,12 @@
 const router = require("express").Router();
-const {appleSignin} = require('apple-signin-auth');
-
+const appleSignin = require('apple-signin-auth');
 
 router.post('/', async (req, res) => {
   console.log(req.body);
-  
-  const code = req.body.code; 
+
+  const code = req.body.code;
+
+  console.log(code)
   
   const options = {
     clientID: process.env.CLIENT_ID,

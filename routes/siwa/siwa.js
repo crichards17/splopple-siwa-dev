@@ -1,11 +1,12 @@
 const router = require("express").Router();
 
+
 router.post('/', async (req, res) => {
   console.log(req.body);
 
-  const { provider, response } = req.body;
+  const code = req.query.code;
 
-  res.json(req.body);
+  res.json(code);
 
 });
 

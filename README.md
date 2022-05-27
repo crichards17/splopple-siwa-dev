@@ -1,29 +1,10 @@
-# Create React Express App
+# Sign In With Apple testing
 
-## About This Boilerplate
+## Purpose
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+This repo is a sandbox environment in which I built a test implementation of Apple's Sign In WIth Apple authentication protocol, with the intention of implementing this into the [Splopple playlist app](https://github.com/crichards17/splopple-music). This was a fun challenge and I was able to get this working in sandbox, but project timeline required rescoping and SIWA was dropped from the final Splopple app.
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+## Technologies
 
-## Starting the app locally
-
-Start by installing front and backend dependencies. While in this directory, run the following command:
-
-```
-npm install
-```
-
-This should install node modules within the server and the client folder.
-
-After both installations complete, run the following command in your terminal:
-
-```
-npm start
-```
-
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
-
-## Deployment (Heroku)
-
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+Apple documentation for SIWA can be found here:
+https://developer.apple.com/documentation/sign_in_with_apple
